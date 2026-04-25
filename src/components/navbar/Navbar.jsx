@@ -38,9 +38,13 @@ function Navbar() {
                     </Link>
 
                     <div className="nav-right nav-right-mobile">
-                        <button onClick={() => i18n.changeLanguage("en")}>EN</button>
+                        <button className="btns-right" onClick={() => i18n.changeLanguage("en")}>EN</button>
                         <div className="chiziq-tepa-past"></div>
-                        <button onClick={() => i18n.changeLanguage("uz")}>UZ</button>
+                        <button className="btns-right" onClick={() => i18n.changeLanguage("uz")}>UZ</button>
+
+                        <a href="#" className="quoteBTN1">
+                            <button className="quoteBTN">{t("quote")}</button>
+                        </a>
                     </div>
                 </div>
 

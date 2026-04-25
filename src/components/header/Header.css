@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background: #000;
+    width: 100%;
+    height: 100vh;
+}
+
+/* LAYOUT */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* LEFT */
+.left-head {
+    width: 50%;
+    color: #fff;
+    padding: 100px;
+}
+
+.ani-icon {
+    width: fit-content;
+    border: 1px solid #e5c300;
+    border-radius: 20px;
+    background: #ffd9002a;
+    color: #bfa200;
+    padding: 8px 15px;
+}
+
+.h1-des {
+    font-size: 4rem;
+}
+
+.h1-desc {
+    font-size: 4rem;
+    color: #ffe75f;
+}
+
+.chiqizContainer {
+    display: flex;
+    align-items: center;
+}
+
+.head-chiziq {
+    width: 70px;
+    height: 2px;
+    background: #e5c300;
+}
+
+.w-b {
+    padding: 15px;
+    font-size: 2rem;
+    color: #ffe75f;
+    font-family: monospace;
+}
+
+/* BUTTON */
+.btn-head1 {
+    background: linear-gradient(to right, #ffdd1e, #ffe75f);
+    border: none;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn-head2 {
+    border: 1px solid #e5c300;
+    background: none;
+    color: #e5c300;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.btn-head1:active,
+.btn-head2:active {
+    transform: scale(1.1);
+}
+
+/* COUNT */
+.countes {
+    display: flex;
+    gap: 20px;
+}
+
+.proj1 {
+    font-size: 1.5rem;
+    color: #ffe75f;
+}
+
+.proj1 p {
+    font-size: 0.9rem;
+    color: #9f9f9fcf;
+}
+
+/* RIGHT CODE */
+.right-head {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.code-box {
+    background: #0d1117;
+    color: #ffeb78a1;
+    padding: 20px;
+    border-radius: 10px;
+    font-family: monospace;
+    font-size: 18px;
+    width: 450px;
+    height: 450px;
+    overflow: hidden;
+    box-shadow: 0 0 40px #000;
+}
+
+/* CURSOR */
+.cursor {
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+/* ================== TABLET ================== */
+@media (max-width: 1024px) {
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .left-head {
+        width: 100%;
+        padding: 50px 20px;
+        align-items: center;
+    }
+
+    .right-head {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .h1-des,
+    .h1-desc {
+        font-size: 3rem;
+    }
+
+    .code-box {
+        width: 90%;
+        height: auto;
+        font-size: 16px;
+    }
+
+    .countes {
+        justify-content: center;
+    }
+}
+
+
+/* ================== MOBILE ================== */
+@media (max-width: 600px) {
+    header {
+        height: auto;
+        padding-bottom: 50px;
+    }
+
+    .left-head {
+        padding: 30px 15px;
+    }
+
+    .h1-des,
+    .h1-desc {
+        font-size: 2.2rem;
+    }
+
+    .w-b {
+        font-size: 1.5rem;
+    }
+
+    .ani-icon {
+        font-size: 0.8rem;
+        padding: 5px 10px;
+    }
+
+    .btn-head1,
+    .btn-head2 {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .btnd-head {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .code-box {
+        width: 100%;
+        font-size: 14px;
+        padding: 15px;
+    }
+
+    .proj1 {
+        font-size: 1.2rem;
+    }
+
+    .proj1 p {
+        font-size: 0.8rem;
+    }
+
+    .countes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .head-chiziq {
+        width: 40px;
+    }
+}   

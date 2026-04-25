@@ -17,7 +17,8 @@ i18n
                     services: "Services",
                     portfolio: "Portfolio",
                     pricing: "Pricing",
-                    contact: "Contact"
+                    contact: "Contact",
+                    quote: "Get a Quote"
                 }
             },
             uz: {
@@ -26,7 +27,8 @@ i18n
                     services: "Xizmatlar",
                     portfolio: "Bajarilgan ishlar",
                     pricing: "Narxlar",
-                    contact: "Bog'lanish"
+                    contact: "Bog'lanish",
+                    quote: "Narx so'rash"
                 }
             }
         }

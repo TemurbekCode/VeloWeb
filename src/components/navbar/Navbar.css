@@ -47,7 +47,7 @@
 }
 
 .nav-link {
-    color: #8080809a;
+    color: rgb(166, 166, 166);
     text-decoration: none;
     font-size: 18px;
     cursor: pointer;
@@ -56,7 +56,7 @@
 }
 
 .nav-link:hover {
-    color: #ffffff;
+    color: #dbba00;
 }
 
 .nav-item {
@@ -69,7 +69,23 @@
     color: #fff;
 }
 
-.nav-right button {
+.quoteBTN {
+    width: 140px;
+    height: 37px;
+    background-color: #808080;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 1rem;
+    color: #ffd700;
+    box-shadow: 2px 2px 2px #ffd700;
+}
+
+.quoteBTN:active {
+    transform: scale(1.1);
+}
+
+.nav-right .btns-right {
     border: none;
     padding: 5px 8px;
     cursor: pointer;
@@ -87,7 +103,7 @@
     margin: 8px 1px;
 }
 
-.nav-right button:focus {
+.nav-right .btns-right:focus {
     color: #fff;
 }
 
