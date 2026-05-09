@@ -1,17 +1,13 @@
-//components
 import Header from "../components/header/Header";
-
-
-
+import Services from "../components/services/Services";
 
 function HomePage() {
-
-    return (
-        <>
-        <Header />
-        </>
-    )
+  return (
+    <>
+      <Header />
+      <Services />
+    </>
+  );
 }
-
 
 export default HomePage;
