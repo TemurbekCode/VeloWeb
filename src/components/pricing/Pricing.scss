@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    transition: 0.2s ease-in-out;
+    transition: 0.3s ease-in-out;
 }
 
 .pricing {
@@ -97,13 +97,30 @@
     height: 100vh;
     border: solid 1px #5d5d5d4e;
     border-radius: 13px;
-    transform: translateY(15px);
+    transform: translateY(10px);
 }
 
 .cardBasic:hover,
 .cardPremium:hover {
-    border-top: 3px solid #ffd900;
-    transform: translateY(-1px);
+    border: solid 1px #a1890069;
+    border-top: 2px solid #ffd900;
+    transform: translateY(5px);
+}
+
+.popu {
+    position: absolute;
+    margin: 250px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    color: #080808;
+    font-weight: 620;
+    font-size: 0.9rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 130px;
+    height: 30px;
+    background: linear-gradient(to right, #ffdb12, #ffe96a);
 }
 
 .topic-card-pri {
@@ -166,6 +183,11 @@
     background: #a1890038;
     margin: 0 35px;
 }
+
+
+
+
+
 
 
 /* ========================= */

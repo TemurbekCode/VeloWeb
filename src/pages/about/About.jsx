@@ -188,7 +188,7 @@ export default function About() {
                         <div style={{ position: "absolute", bottom: 16, left: 12, right: 12, background: "rgba(8,8,8,0.85)", border: "1px solid rgba(201,168,76,0.25)", borderRadius: 10, padding: "10px 14px", display: "flex", alignItems: "center", gap: 10 }}>
                             <div style={{ width: 8, height: 8, borderRadius: "50%", background: "#28c840", boxShadow: "0 0 8px #28c840", flexShrink: 0 }} />
                             <div>
-                                <div style={{ fontSize: 13, fontWeight: 700, color: "#F0EAD8" }}>Temurbek Alisherov</div>
+                                <div style={{ fontSize: 13, fontWeight: 700, color: "#F0EAD8" }}>Temur Alisherov</div>
                                 <div style={{ fontSize: 11, color: "#C9A84C" }}>Founder & Frontend Dev</div>
                             </div>
                         </div>

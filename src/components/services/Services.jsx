@@ -80,7 +80,9 @@ function Services() {
 
                     <br />
 
-                    <button>Get a Quote →</button>
+                    <a href="#contact" className="button-ser">
+                        <button className="button-ser">Get a Quote →</button>
+                    </a>
                 </div>
 
                 <div className="card">
@@ -105,7 +107,9 @@ function Services() {
 
                     <br />
 
-                    <button>Get a Quote →</button>
+                    <a href="#contact" className="button-ser">
+                        <button className="button-ser">Get a Quote →</button>
+                    </a>
                 </div>
 
                 <div className="card">
@@ -130,7 +134,9 @@ function Services() {
 
                     <br />
 
-                    <button>Get a Quote →</button>
+                    <a href="#contact" className="button-ser">
+                        <button className="button-ser">Get a Quote →</button>
+                    </a>
                 </div>
 
                 <div className="card">
@@ -155,7 +161,9 @@ function Services() {
 
                     <br />
 
-                    <button>Get a Quote →</button>
+                    <a href="#contact" className="button-ser">
+                        <button className="button-ser">Get a Quote →</button>
+                    </a>
                 </div>
 
                 <div className="card">
@@ -180,7 +188,9 @@ function Services() {
 
                     <br />
 
-                    <button>Get a Quote →</button>
+                    <a href="#contact" className="button-ser">
+                        <button className="button-ser">Get a Quote →</button>
+                    </a>
                 </div>
 
                 <div className="card">
@@ -205,9 +215,10 @@ function Services() {
 
                     <br />
 
-                    <button>Get a Quote →</button>
+                    <a href="#contact" className="button-ser">
+                        <button className="button-ser">Get a Quote →</button>
+                    </a>
                 </div>
-
             </div>
         </div>
     );

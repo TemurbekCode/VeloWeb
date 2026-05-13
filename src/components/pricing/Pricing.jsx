@@ -12,20 +12,21 @@ function Pricing() {
             <p className="topic3">Simple and clear pricing — no hidden fees.</p><br /><br />
             <div className="pricing-title-line"></div><br /><br />
 
+            <div className="popu">Most Popular ⭐</div>
             <div className="cards-pricing">
                 <div className="cardBasic">
                     <div className="topic-card-pri">
                         <div className="icon-card-pri">
-                            🚀
+                            ⚡
                         </div>
-                        <b>Standard</b>
+                        <b>Basic</b>
                     </div>
 
                     <div className="pri-card">
-                        <h1>$500</h1><sub>USD</sub>
+                        <h1>$150</h1><sub>USD</sub>
                     </div>
-                    <p className="p-pri-card">≈ 6,350,000 UZS</p><br />
-                    <p className="p2-pri-card">Ideal for growing businesses that need a full professional website.</p><br /><br />
+                    <p className="p-pri-card">≈ 1,905,000 UZS</p><br />
+                    <p className="p2-pri-card">Perfect for individuals and small businesses getting started online.</p><br /><br />
                     <div className="hr-pri-card" />
                 </div>
 
@@ -48,16 +49,16 @@ function Pricing() {
                 <div className="cardPremium">
                     <div className="topic-card-pri">
                         <div className="icon-card-pri">
-                            🚀
+                            💎
                         </div>
-                        <b>Standard</b>
+                        <b>Premium</b>
                     </div>
 
                     <div className="pri-card">
-                        <h1>$500</h1><sub>USD</sub>
+                        <h1>$1500</h1><sub>USD</sub>
                     </div>
-                    <p className="p-pri-card">≈ 6,350,000 UZS</p><br />
-                    <p className="p2-pri-card">Ideal for growing businesses that need a full professional website.</p><br /><br />
+                    <p className="p-pri-card">≈ 19,050,000 UZS</p><br />
+                    <p className="p2-pri-card">For businesses that want a complete, high-end web presence.</p><br /><br />
                     <div className="hr-pri-card" />
                 </div>
             </div><br /><br /><br />

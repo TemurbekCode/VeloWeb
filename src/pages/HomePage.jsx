@@ -1,3 +1,4 @@
+import Contact from "../components/Contact";
 import Header from "../components/header/Header";
 import Portfolio from "../components/Portfolio";
 import Pricing from "../components/pricing/Pricing";
@@ -10,6 +11,7 @@ function HomePage() {
       <Services />
       <Portfolio />
       <Pricing />
+      <Contact />
     </>
   );
 }
