@@ -7,8 +7,10 @@ function Pricing() {
         <div className="pricing">
             <div className="topic1">
                 <p>TRANSPARENT PRICING</p>
-            </div>
-            <h1 className="topic2">Our Pricing</h1>
+            </div><br />
+            <h1 className="topic2">Our Pricing</h1><br />
+            <p className="topic3">Simple and clear pricing — no hidden fees.</p><br /><br />
+            <div className="pricing-title-line"></div>
         </div>
     )
 }

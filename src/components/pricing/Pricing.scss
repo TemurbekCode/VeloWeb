@@ -9,7 +9,8 @@
     width: 100%;
     min-height: 100vh;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     color: aliceblue;
 }
 
@@ -23,10 +24,28 @@
     border-radius: 30px;
     background: #e3c10014;
     color: #a18900;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .topic2 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: bold;
-    font-size: 4rem;
+    font-weight: 800;
+    font-size: 4.2rem;
+    color: #fffbe6ea;
+
+}
+
+.topic3 {
+    font-size: 1.4rem;
+    color: #808080c2;
+}
+
+.pricing-title-line {
+    width: 90px;
+    height: 3px;
+    border-radius: 10px;
+    background: linear-gradient(to right,
+            transparent,
+            #e5c300,
+            transparent);
 }

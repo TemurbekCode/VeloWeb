@@ -74,7 +74,7 @@ function Services() {
                     <div className="hr-card"></div>
 
                     <div className="price">
-                        <b>From $150</b>
+                        <b>From $***</b>
                         <div>⏱️ 3-5 days</div>
                     </div>
 
@@ -99,7 +99,7 @@ function Services() {
                     <div className="hr-card"></div>
 
                     <div className="price">
-                        <b>From $300</b>
+                        <b>From $***</b>
                         <div>⏱️ 1-2 weeks</div>
                     </div>
 
@@ -124,7 +124,7 @@ function Services() {
                     <div className="hr-card"></div>
 
                     <div className="price">
-                        <b>From $200</b>
+                        <b>From $***</b>
                         <div>⏱️ 5-7 days</div>
                     </div>
 
@@ -149,7 +149,7 @@ function Services() {
                     <div className="hr-card"></div>
 
                     <div className="price">
-                        <b>From $150</b>
+                        <b>From $***</b>
                         <div>⏱️ 3-5 days</div>
                     </div>
 
@@ -174,7 +174,7 @@ function Services() {
                     <div className="hr-card"></div>
 
                     <div className="price">
-                        <b>From $250</b>
+                        <b>From $***</b>
                         <div>⏱️ 1-2 weeks</div>
                     </div>
 
@@ -199,7 +199,7 @@ function Services() {
                     <div className="hr-card"></div>
 
                     <div className="price">
-                        <b>From $400</b>
+                        <b>From $***</b>
                         <div>⏱️ 2 weeks</div>
                     </div>
 
