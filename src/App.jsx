@@ -4,11 +4,15 @@ import './App.css'
 import Navbar from './components/navbar/Navbar.jsx';
 import Loading from './components/loading/Loading.jsx';
 
+/* Pages */
 import HomePage from "./pages/HomePage.jsx";
 import Services from './components/services/Services.jsx';
 import Portfolio from "./components/Portfolio.jsx";
+import Pricing from "./components/pricing/Pricing.jsx";
 
-function App() {  
+import About from "./pages/about/About.jsx";
+
+function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -24,7 +28,8 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/services" element={<Services />} />
         <Route path="/portfolio" element={<Portfolio />} />
-        <Route path="*" element={<h2>404 - Page Not Found</h2>} />
+        <Route path="/pricing" element={<Pricing />} />
+<Route path="/aboutUs" element={<About />} />        <Route path="*" element={<h2>404 - Page Not Found</h2>} />
       </Routes>
     </>
   );

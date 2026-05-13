@@ -8,7 +8,7 @@
     position: sticky;
     top: 0;
     z-index: 1000;
-    background: #000000;
+    background: #080808;
     padding: 15px 0;
 }
 
@@ -156,5 +156,76 @@
         border-top: 1px solid #333;
         width: 100%;
         margin-top: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 80px);
+        background: rgba(8, 8, 8, 0.98);
+        backdrop-filter: blur(18px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 28px;
+        transition: 0.35s ease;
+        z-index: 999;
+    }
+
+    .nav-links.active {
+        left: 0;
+    }
+
+    .nav-link {
+        font-size: 22px;
+        font-weight: 700;
+    }
+
+    .burger {
+        display: block;
+        color: #fff;
+        font-size: 28px;
+        cursor: pointer;
+        z-index: 1001;
+    }
+
+    .nav-right-desktop {
+        display: none;
+    }
+
+    .nav-right-mobile {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-top: 30px;
+    }
+}
+
+/* 🔥 Navbar site ochilganda animation bilan chiqadi */
+.nav {
+    animation: navbarShow 1s ease forwards;
+    opacity: 0;
+    transform: translateY(-40px);
+}
+
+@keyframes navbarShow {
+    0% {
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+
+    60% {
+        opacity: 1;
+        transform: translateY(10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
     }
 }

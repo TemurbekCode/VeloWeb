@@ -7,7 +7,7 @@
 .services {
     width: 100%;
     min-height: 100vh;
-    background-color: #000;
+    background-color: #080808;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -44,14 +44,13 @@
     width: 90px;
     height: 3px;
     border-radius: 10px;
-
     background: linear-gradient(to right,
             transparent,
             #e5c300,
             transparent);
 }
 
-// CARDS
+/* ================= CARDS ================= */
 
 .cardsContainer {
     color: #ffff;
@@ -74,6 +73,10 @@
     padding: 20px;
     border: 1px solid #e5c30034;
     transition: 0.3s ease-in-out;
+
+    /* SCROLL ANIMATION */
+    opacity: 0;
+    transform: translateY(80px);
 }
 
 .iconCard1 {
@@ -86,6 +89,8 @@
     align-items: center;
     justify-content: center;
     font-size: 1.7rem;
+
+    animation: floatIcon 3s ease-in-out infinite;
 }
 
 .card h2 {
@@ -156,12 +161,123 @@
     background-color: #e5c300;
     border: solid 1px #e5c300;
     border-top: 3px solid #e5c300cc;
-
     color: #000;
     transition: 0.3s ease-in-out;
 }
 
-// MEDIA 
+/* ================= SCROLL ACTIVE ================= */
+
+.show-services .services-title1 {
+    animation: fadeDown 1s ease forwards;
+}
+
+.show-services .services-title2 {
+    animation: fadeUp 1s ease forwards;
+    animation-delay: 0.2s;
+}
+
+.show-services .services-title3 {
+    animation: fadeUp 1s ease forwards;
+    animation-delay: 0.4s;
+}
+
+.show-services .services-title-line {
+    animation: lineShow 1s ease forwards;
+    animation-delay: 0.6s;
+}
+
+.show-services .card {
+    animation: cardShow 1s ease forwards;
+}
+
+.show-services .card:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.show-services .card:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.show-services .card:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+.show-services .card:nth-child(4) {
+    animation-delay: 0.8s;
+}
+
+.show-services .card:nth-child(5) {
+    animation-delay: 1s;
+}
+
+.show-services .card:nth-child(6) {
+    animation-delay: 1.2s;
+}
+
+/* ================= KEYFRAMES ================= */
+
+@keyframes fadeDown {
+    from {
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes lineShow {
+    from {
+        opacity: 0;
+        transform: scaleX(0);
+    }
+
+    to {
+        opacity: 1;
+        transform: scaleX(1);
+    }
+}
+
+@keyframes cardShow {
+    from {
+        opacity: 0;
+        transform: translateY(80px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes floatIcon {
+
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-6px);
+    }
+}
+
+/* ================= MEDIA ================= */
+
 @media (max-width: 992px) {
     .cardsContainer {
         grid-template-columns: 1fr 1fr;
@@ -185,7 +301,7 @@
     }
 
     .card {
-        height: auto; /* mobileda fixed height muammo qiladi */
+        height: auto;
     }
 
     .services-title2 {

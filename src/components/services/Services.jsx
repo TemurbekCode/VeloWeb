@@ -1,8 +1,39 @@
 import "./services.scss";
+import { useEffect, useRef, useState } from "react";
 
 function Services() {
+
+    const sectionRef = useRef(null);
+    const [show, setShow] = useState(false);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) {
+                    setShow(true);
+                }
+            },
+            {
+                threshold: 0.2,
+            }
+        );
+
+        if (sectionRef.current) {
+            observer.observe(sectionRef.current);
+        }
+
+        return () => {
+            if (sectionRef.current) {
+                observer.unobserve(sectionRef.current);
+            }
+        };
+    }, []);
+
     return (
-        <div className="services">
+        <div
+            className={`services ${show ? "show-services" : ""}`}
+            ref={sectionRef}
+        >
 
             <div className="services-title1">
                 What We Offer
@@ -60,7 +91,8 @@ function Services() {
                     <br />
 
                     <p>
-                        Modern multi-page websites for startups and companies to establish a strong online presence.                    </p>
+                        Modern multi-page websites for startups and companies to establish a strong online presence.
+                    </p>
 
                     <br />
 
@@ -84,7 +116,8 @@ function Services() {
                     <br />
 
                     <p>
-                        Stylish websites for restaurants and cafes with menu, location and reservation features.                    </p>
+                        Stylish websites for restaurants and cafes with menu, location and reservation features.
+                    </p>
 
                     <br />
 
@@ -108,7 +141,8 @@ function Services() {
                     <br />
 
                     <p>
-                        Personal portfolio websites for doctors, lawyers, bloggers and creative professionals.                    </p>
+                        Personal portfolio websites for doctors, lawyers, bloggers and creative professionals.
+                    </p>
 
                     <br />
 
@@ -132,7 +166,8 @@ function Services() {
                     <br />
 
                     <p>
-                        Professional websites for schools, courses and educational centers with course listings.                    </p>
+                        Professional websites for schools, courses and educational centers with course listings.
+                    </p>
 
                     <br />
 
@@ -156,7 +191,8 @@ function Services() {
                     <br />
 
                     <p>
-                        Full-featured corporate websites with multiple pages, team section and contact forms.                    </p>
+                        Full-featured corporate websites with multiple pages, team section and contact forms.
+                    </p>
 
                     <br />
 

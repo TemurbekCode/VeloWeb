@@ -95,8 +95,12 @@ const services = [
                     </div><br />
 
                     <div className="btnd-head">
-                        <button className="btn-head1">View Our Work</button>
-                        <button className="btn-head2">Get a Quote</button>
+                        <a href="#portfolio">
+                            <button className="btn-head1">View Our Work</button>
+                        </a>
+                        <a href="#contact">
+                            <button className="btn-head2">Get a Quote</button>
+                        </a>
                     </div><br /><br /><br /><br />
 
                     <div className="countes">

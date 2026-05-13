@@ -17,7 +17,7 @@ i18n
                     services: "Services",
                     portfolio: "Portfolio",
                     pricing: "Pricing",
-                    contact: "Contact",
+                    aboutUs: "About Us",
                     quote: "Get a Quote"
                 }
             },
@@ -27,7 +27,7 @@ i18n
                     services: "Xizmatlar",
                     portfolio: "Bajarilgan ishlar",
                     pricing: "Narxlar",
-                    contact: "Bog'lanish",
+                    aboutUs: "Biz haqimizda",
                     quote: "Narx so'rash"
                 }
             }

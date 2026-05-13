@@ -26,7 +26,7 @@ function Navbar() {
                     <Link to="/services" className="nav-link" onClick={closeAll}>{t("services")}</Link>
                     <Link to="/portfolio" className="nav-link" onClick={closeAll}>{t("portfolio")}</Link>
                     <Link to="/pricing" className="nav-link" onClick={closeAll}>{t("pricing")}</Link>
-                    <Link to="/register" className="nav-link" onClick={closeAll}>{t("contact")}</Link>
+                    <Link to="/aboutUs" className="nav-link" onClick={closeAll}>{t("aboutUs")}</Link>
 
                     {/* ✅ Faqat mobile da ko'rinadi */}
                     <div className="nav-right-mobile">
@@ -56,7 +56,7 @@ function Navbar() {
                         className={`btns-right ${currentLang === "uz" ? "lang-active" : ""}`}
                         onClick={() => changeLang("uz")}
                     >UZ</button>
-                    <a href="#">
+                    <a href="#contact">
                         <button className="quoteBTN">{t("quote")}</button>
                     </a>
                 </div>

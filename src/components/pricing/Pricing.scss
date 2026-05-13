@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.pricing {
+    background: #080808;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    color: aliceblue;
+}
+
+.topic1 {
+    width: 15%;
+    height: 33px;
+    border: 1px solid #e3c10082;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    background: #e3c10014;
+    color: #a18900;
+}
+
+.topic2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 4rem;
+}

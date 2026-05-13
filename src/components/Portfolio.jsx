@@ -241,9 +241,8 @@ export default function Portfolio({ lang = "en" }) {
               minHeight: isTablet ? "auto" : 420,
               opacity: animating ? 0 : 1,
               transform: animating
-                ? `translateX(${
-                    direction === "right" ? "-30px" : "30px"
-                  })`
+                ? `translateX(${direction === "right" ? "-30px" : "30px"
+                })`
                 : "translateX(0)",
               transition: "opacity 0.3s ease, transform 0.3s ease",
               boxShadow:
@@ -486,12 +485,12 @@ export default function Portfolio({ lang = "en" }) {
                     transition: "transform 0.2s",
                   }}
                   onMouseEnter={(e) =>
-                    (e.currentTarget.style.transform =
-                      "translateY(-2px)")
+                  (e.currentTarget.style.transform =
+                    "translateY(-2px)")
                   }
                   onMouseLeave={(e) =>
-                    (e.currentTarget.style.transform =
-                      "translateY(0)")
+                  (e.currentTarget.style.transform =
+                    "translateY(0)")
                   }
                 >
                   {t.viewLive}
