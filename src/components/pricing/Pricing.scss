@@ -71,7 +71,7 @@
     display: flex;
     flex-direction: column;
     width: 28%;
-    height: 100vh;
+    height: 110vh;
     border: solid 1px #5d5d5d4e;
     border-radius: 13px;
     transform: translateY(15px);
@@ -82,7 +82,7 @@
     display: flex;
     flex-direction: column;
     width: 28%;
-    height: 100vh;
+    height: 115vh;
     border: solid 1px #a18900a9;
     border-radius: 13px;
     border-top: 3px solid #ffd900;
@@ -94,7 +94,7 @@
     display: flex;
     flex-direction: column;
     width: 28%;
-    height: 100vh;
+    height: 112vh;
     border: solid 1px #5d5d5d4e;
     border-radius: 13px;
     transform: translateY(10px);
@@ -184,7 +184,62 @@
     margin: 0 35px;
 }
 
+.features {
+    padding: 25px 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    color: #d7b96e;
+    font-size: 1.05rem;
+}
 
+.features p {
+    color: #d7b96e;
+}
+
+.features .disable {
+    color: #4f4f4f;
+}
+
+.btn-price {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+    text-decoration: none;
+}
+
+.btn-price button {
+    width: 82%;
+    height: 60px;
+    border-radius: 12px;
+    border: 1px solid #a1890057;
+    background: transparent;
+    color: #f3cf63;
+    font-size: 1.2rem;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.cardStandard .btn-price button {
+    background: linear-gradient(to right, #e2c55f, #f7df87);
+    color: #000;
+}
+
+.discount-price {
+    text-decoration: line-through;
+    color: #777;
+    font-size: 1.4rem;
+    padding-top: 18px;
+    margin-right: 14px;
+}
+
+.cardBasic,
+.cardStandard,
+.cardPremium {
+    padding-bottom: 30px;
+}
 
 
 
@@ -447,3 +502,4 @@
         line-height: 1.6;
     }
 }
+

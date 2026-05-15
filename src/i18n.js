@@ -77,6 +77,29 @@ i18n
                     madeWith: "Made with ",
 
                     madeIn: " in Samarkand, Uzbekistan",
+                    pricingBadge: "TRANSPARENT PRICING",
+                    pricingTitle: "Our Pricing",
+                    pricingDesc: "Simple and clear pricing — no hidden fees.",
+
+                    mostPopular: "Most Popular",
+
+                    basic: "Basic",
+                    standard: "Standard",
+                    premium: "Premium",
+
+                    basicDesc:
+                        "Perfect for individuals and small businesses getting started online.",
+
+                    standardDesc:
+                        "Ideal for growing businesses that need a full professional website.",
+
+                    premiumDesc:
+                        "For businesses that want a complete, high-end web presence.",
+
+                    getStarted: "Get Started",
+
+                    pricingBottom:
+                        "Prices may vary based on project complexity. Contact us for a free consultation!",
                 }
             },
 
@@ -146,6 +169,29 @@ i18n
                     madeWith: "❤️ bilan yaratildi ",
 
                     madeIn: " Samarqand, O'zbekistonda",
+                    pricingBadge: "SHAFFOF NARXLAR",
+pricingTitle: "Narxlarimiz",
+pricingDesc: "Oddiy va tushunarli narxlar — yashirin to'lovlarsiz.",
+
+mostPopular: "Eng Mashhur",
+
+basic: "Boshlang'ich",
+standard: "Standart",
+premium: "Premium",
+
+basicDesc:
+  "Online faoliyatni boshlayotgan insonlar va kichik bizneslar uchun ideal.",
+
+standardDesc:
+  "Professional websayt kerak bo'lgan rivojlanayotgan bizneslar uchun.",
+
+premiumDesc:
+  "To'liq va premium darajadagi web presence xohlaydigan bizneslar uchun.",
+
+getStarted: "Boshlash",
+
+pricingBottom:
+  "Narxlar loyiha murakkabligiga qarab o'zgarishi mumkin. Bepul konsultatsiya uchun bog'laning!",
                 }
             }
         }
