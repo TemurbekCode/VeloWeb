@@ -28,7 +28,7 @@ function Pricing() {
 
             <div className="pricing-title-line"></div>
 
-            <br /><br />
+            <br /><br /><br /><br /><br />
 
             <div className="popu">
                 {t("mostPopular")} ⭐
