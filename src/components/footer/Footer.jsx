@@ -7,7 +7,9 @@ function Footer() {
             <div className="footer-topics">
                 <h1>Ready to start your project?</h1>
                 <p>Contact us today — get a free consultation!</p>
-                <button>Get Free Quote →</button>
+                <a className="button" href="#contact">
+                    <button className="button">Get Free Quote →</button>
+                </a>
             </div>
 
             <div className="links-footer">
@@ -51,6 +53,11 @@ function Footer() {
                     <p>@webrivo (Telegram)</p>
                 </div>
 
+                <div className="line-footer-links"></div>
+                <div className="end">
+                    <p>© 2024 Webrivo Studio. All rights reserved.</p>
+                    <p>Made with <div className="heart-end">❤️</div> in Samarkand, Uzbekistan</p>
+                </div>
             </div>
         </div>
     )
