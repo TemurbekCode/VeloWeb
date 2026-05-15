@@ -1,10 +1,17 @@
 import "./Header.css"
 import { useState, useEffect } from "react"
+import { useTranslation } from "react-i18next"
 
 function Header() {
 
+    const { t, i18n } = useTranslation()
+
     // LEFT typing
-    const words = ["Websites", "Landing Pages", "Portfolios", "Startup Websites"]
+    const words =
+        i18n.language === "uz"
+            ? ["Websaytlar", "Landing Pagelar", "Portfoliolar", "Startup Saytlar"]
+            : ["Websites", "Landing Pages", "Portfolios", "Startup Websites"]
+
     const [text, setText] = useState("")
     const [index, setIndex] = useState(0)
     const [wordIndex, setWordIndex] = useState(0)
@@ -34,7 +41,15 @@ function Header() {
         }, speed)
 
         return () => clearTimeout(timeout)
-    }, [index, isDeleting, wordIndex])
+    }, [index, isDeleting, wordIndex, words])
+
+    // Til almashganda reset
+    useEffect(() => {
+        setText("")
+        setIndex(0)
+        setWordIndex(0)
+        setIsDeleting(false)
+    }, [i18n.language])
 
 
     // RIGHT code typing
@@ -80,11 +95,11 @@ const services = [
                 {/* LEFT */}
                 <div className="left-head">
                     <div className="ani-icon">
-                        ⚡Fast • Professional • Modern
+                        ⚡{t("fast")} • {t("professional")} • {t("modern")}
                     </div><br />
 
-                    <h1 className="h1-des">We Build Fast &</h1>
-                    <h1 className="h1-desc">Professional</h1><br />
+                    <h1 className="h1-des">{t("title1")}</h1>
+                    <h1 className="h1-desc">{t("title2")}</h1><br />
 
                     <div className="chiqizContainer">
                         <div className="head-chiziq"></div>
@@ -96,25 +111,32 @@ const services = [
 
                     <div className="btnd-head">
                         <a href="#portfolio">
-                            <button className="btn-head1">View Our Work</button>
+                            <button className="btn-head1">
+                                {t("viewWork")}
+                            </button>
                         </a>
+
                         <a href="#contact">
-                            <button className="btn-head2">Get a Quote</button>
+                            <button className="btn-head2">
+                                {t("quote")}
+                            </button>
                         </a>
                     </div><br /><br /><br /><br />
 
                     <div className="countes">
                         <div className="proj1">
                             <h2>10+</h2>
-                            <p>Projects</p>
+                            <p>{t("projects")}</p>
                         </div>
+
                         <div className="proj1">
                             <h2>100%</h2>
-                            <p>Quality</p>
+                            <p>{t("quality")}</p>
                         </div>
+
                         <div className="proj1">
                             <h2>24/7</h2>
-                            <p>Support</p>
+                            <p>{t("support")}</p>
                         </div>
                     </div>
                 </div>

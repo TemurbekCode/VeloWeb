@@ -1,7 +1,10 @@
 import "./services.scss";
 import { useEffect, useRef, useState } from "react";
+import { useTranslation } from "react-i18next";
 
 function Services() {
+
+    const { t } = useTranslation();
 
     const sectionRef = useRef(null);
     const [show, setShow] = useState(false);
@@ -36,37 +39,36 @@ function Services() {
         >
 
             <div className="services-title1">
-                What We Offer
+                {t("whatOffer")}
             </div>
 
             <br />
 
             <h1 className="services-title2">
-                Our Services
+                {t("ourServices")}
             </h1>
 
             <br />
 
             <p className="services-title3">
-                We build modern, fast and professional websites tailored to your business needs.
+                {t("servicesDesc")}
             </p>
 
             <br />
 
             <div className="services-title-line"></div>
 
-            {/* BITTA CONTAINER */}
             <div className="cardsContainer">
 
                 <div className="card">
                     <div className="iconCard1">📄</div>
                     <br />
 
-                    <h2>Landing Pages</h2>
+                    <h2>{t("landingTitle")}</h2>
                     <br />
 
                     <p>
-                        High-converting single-page websites designed to attract and turn visitors into customers.
+                        {t("landingDesc")}
                     </p>
 
                     <br />
@@ -74,14 +76,16 @@ function Services() {
                     <div className="hr-card"></div>
 
                     <div className="price">
-                        <b>From $***</b>
+                        <b>{t("fromPrice")}</b>
                         <div>⏱️ 3-5 days</div>
                     </div>
 
                     <br />
 
                     <a href="#contact" className="button-ser">
-                        <button className="button-ser">Get a Quote →</button>
+                        <button className="button-ser">
+                            {t("quote")} →
+                        </button>
                     </a>
                 </div>
 
@@ -89,11 +93,11 @@ function Services() {
                     <div className="iconCard1">🚀</div>
                     <br />
 
-                    <h2>Startup & Corporate</h2>
+                    <h2>{t("startupTitle")}</h2>
                     <br />
 
                     <p>
-                        Modern multi-page websites for startups and companies to establish a strong online presence.
+                        {t("startupDesc")}
                     </p>
 
                     <br />
@@ -101,14 +105,16 @@ function Services() {
                     <div className="hr-card"></div>
 
                     <div className="price">
-                        <b>From $***</b>
+                        <b>{t("fromPrice")}</b>
                         <div>⏱️ 1-2 weeks</div>
                     </div>
 
                     <br />
 
                     <a href="#contact" className="button-ser">
-                        <button className="button-ser">Get a Quote →</button>
+                        <button className="button-ser">
+                            {t("quote")} →
+                        </button>
                     </a>
                 </div>
 
@@ -116,11 +122,11 @@ function Services() {
                     <div className="iconCard1">🍽️</div>
                     <br />
 
-                    <h2>Restaurant & Cafe</h2>
+                    <h2>{t("restaurantTitle")}</h2>
                     <br />
 
                     <p>
-                        Stylish websites for restaurants and cafes with menu, location and reservation features.
+                        {t("restaurantDesc")}
                     </p>
 
                     <br />
@@ -128,14 +134,16 @@ function Services() {
                     <div className="hr-card"></div>
 
                     <div className="price">
-                        <b>From $***</b>
+                        <b>{t("fromPrice")}</b>
                         <div>⏱️ 5-7 days</div>
                     </div>
 
                     <br />
 
                     <a href="#contact" className="button-ser">
-                        <button className="button-ser">Get a Quote →</button>
+                        <button className="button-ser">
+                            {t("quote")} →
+                        </button>
                     </a>
                 </div>
 
@@ -143,11 +151,11 @@ function Services() {
                     <div className="iconCard1">👤</div>
                     <br />
 
-                    <h2>Portfolio Sites</h2>
+                    <h2>{t("portfolioTitle")}</h2>
                     <br />
 
                     <p>
-                        Personal portfolio websites for doctors, lawyers, bloggers and creative professionals.
+                        {t("portfolioDesc")}
                     </p>
 
                     <br />
@@ -155,14 +163,16 @@ function Services() {
                     <div className="hr-card"></div>
 
                     <div className="price">
-                        <b>From $***</b>
+                        <b>{t("fromPrice")}</b>
                         <div>⏱️ 3-5 days</div>
                     </div>
 
                     <br />
 
                     <a href="#contact" className="button-ser">
-                        <button className="button-ser">Get a Quote →</button>
+                        <button className="button-ser">
+                            {t("quote")} →
+                        </button>
                     </a>
                 </div>
 
@@ -170,11 +180,11 @@ function Services() {
                     <div className="iconCard1">🎓</div>
                     <br />
 
-                    <h2>Educational Centers</h2>
+                    <h2>{t("educationTitle")}</h2>
                     <br />
 
                     <p>
-                        Professional websites for schools, courses and educational centers with course listings.
+                        {t("educationDesc")}
                     </p>
 
                     <br />
@@ -182,14 +192,16 @@ function Services() {
                     <div className="hr-card"></div>
 
                     <div className="price">
-                        <b>From $***</b>
+                        <b>{t("fromPrice")}</b>
                         <div>⏱️ 1-2 weeks</div>
                     </div>
 
                     <br />
 
                     <a href="#contact" className="button-ser">
-                        <button className="button-ser">Get a Quote →</button>
+                        <button className="button-ser">
+                            {t("quote")} →
+                        </button>
                     </a>
                 </div>
 
@@ -197,11 +209,11 @@ function Services() {
                     <div className="iconCard1">🏢</div>
                     <br />
 
-                    <h2>Corporate Websites</h2>
+                    <h2>{t("corporateTitle")}</h2>
                     <br />
 
                     <p>
-                        Full-featured corporate websites with multiple pages, team section and contact forms.
+                        {t("corporateDesc")}
                     </p>
 
                     <br />
@@ -209,16 +221,19 @@ function Services() {
                     <div className="hr-card"></div>
 
                     <div className="price">
-                        <b>From $***</b>
+                        <b>{t("fromPrice")}</b>
                         <div>⏱️ 2 weeks</div>
                     </div>
 
                     <br />
 
                     <a href="#contact" className="button-ser">
-                        <button className="button-ser">Get a Quote →</button>
+                        <button className="button-ser">
+                            {t("quote")} →
+                        </button>
                     </a>
                 </div>
+
             </div>
         </div>
     );
